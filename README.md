@@ -40,6 +40,69 @@ Para executar o script é necessário:
 - Permissão de leitura no Active Directory
 - Permissão de consulta remota nas máquinas (WMI / CIM)
 
+🚀 Como usar
+-----------------------------------------------------------------------------------
+## 1️⃣ Baixar o projeto
+### Clone o repositório:
+> git clone https://github.com/seuusuario/inventario-ad-lojas.git
+Ou faça download do ZIP.
+________________________________________________
+## 2️⃣ Executar o script
+### Execute o arquivo:
+> `#97119c`Inventario-Loja.bat
+Ou diretamente via PowerShell:
+> `#97119c` .\Inventario-Loja.ps1
+_________________________________________________
+## 3️⃣ Informar a loja
+O sistema solicitará o número da loja:
+
+> Digite o numero da loja (ex: 15)
+
+O script irá:
+- Localizar a OU da loja no AD
+- Buscar todos os computadores
+- Coletar informações do hardware
+- Gerar o relatório automaticamente
+
+📊 Saída do sistema
+---------------------------------------------
+Será gerado um arquivo CSV em:
+> C:\Temp\
+
+Exemplo:
+> Inventario_Loja_15_20260309.csv
+
+## Campos gerados:
+
+```Descrição
+Hostname
+Serial Number
+Número de série do equipamento
+Modelo 
+Sistema Operacional
+Ultimo Logon
+Unidade organizacional da loja
+```
+
+⚠️ Tratamento de erros
+`Caso alguma máquina esteja offline ou inacessível:
+O inventário continua normalmente
+A máquina será marcada como Offline
+Um arquivo .log pode ser gerado com os erros`
+
+🔐 Permissões necessárias
+
+Para funcionamento correto:
+[✅]Permissão de leitura no Active Directory
+[✅]Acesso WMI/CIM às máquinas do domínio
+[✅]Firewall permitindo comunicação remota
+
+📦 Gerar versão executável (.EXE)
+- Opcionalmente o script pode ser convertido para .exe utilizando PS2EXE:
+
+> Install-Module ps2exe
+>Invoke-ps2exe Inventario-Loja.ps1 Inventario-Loja.exe
+
 📌 Possíveis melhorias futuras
 -------------------------------------------------------------------------------------------------------
 - Interface gráfica (GUI)
