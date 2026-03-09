@@ -23,11 +23,11 @@ Facilitar o levantamento de inventário de equipamentos em filiais ou lojas, aut
 📂 Estrutura do Projeto
 ---------------------------------------------------------------------------------
 ```
-- inventario-ad-lojas
-- │
-- ├─ Inventario-Loja.ps1     # Script principal
-- ├─ Inventario-Loja.bat     # Launcher para execução facilitada
-- ├─ README.md               # Documentação do projeto
+ inventario-ad-lojas
+ │
+ ├─ Inventario-Loja.ps1     # Script principal
+ ├─ Inventario-Loja.bat     # Launcher para execução facilitada
+ ├─ README.md               # Documentação do projeto
 ```
 ⚙️ Requisitos
 --------------------------------------------------------------------------------------
