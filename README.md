@@ -48,10 +48,11 @@ Permissão de consulta remota nas máquinas (WMI / CIM)
 - Integração com GLPI / CMDB
 - Execução paralela para maior velocidade
 
-👨‍💻 Autor
+
 _____________________________________________________________________
+👨‍💻 Autor
 Felipe Silva
 Analista / Técnico de TI
-
+_____________________________________________________________________
 📄 Licença
 Este projeto é distribuído para fins educacionais e de automação de infraestrutura de TI.
