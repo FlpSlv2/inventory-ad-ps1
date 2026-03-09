@@ -15,29 +15,30 @@ Facilitar o levantamento de inventário de equipamentos em filiais ou lojas, aut
 
 🖥️ Tecnologias utilizadas
 ---------------------------------------------------------------------------------
-PowerShell
-Active Directory Module (RSAT)
-WMI / CIM
-PS2EXE (opcional para geração de executável)
+- PowerShell
+- Active Directory Module (RSAT)
+- WMI / CIM
+- PS2EXE (opcional para geração de executável)
 
 📂 Estrutura do Projeto
 ---------------------------------------------------------------------------------
-inventario-ad-lojas
-│
-├─ Inventario-Loja.ps1     # Script principal
-├─ Inventario-Loja.bat     # Launcher para execução facilitada
-├─ README.md               # Documentação do projeto
-
+```
+- inventario-ad-lojas
+- │
+- ├─ Inventario-Loja.ps1     # Script principal
+- ├─ Inventario-Loja.bat     # Launcher para execução facilitada
+- ├─ README.md               # Documentação do projeto
+```
 ⚙️ Requisitos
 --------------------------------------------------------------------------------------
 Para executar o script é necessário:
 
-Windows 10 / 11 ou Windows Server
-PowerShell 5+
-RSAT instalado
-Módulo ActiveDirectory
-Permissão de leitura no Active Directory
-Permissão de consulta remota nas máquinas (WMI / CIM)
+- Windows 10 / 11 ou Windows Server
+- PowerShell 5+
+- RSAT instalado
+- Módulo ActiveDirectory
+- Permissão de leitura no Active Directory
+- Permissão de consulta remota nas máquinas (WMI / CIM)
 
 📌 Possíveis melhorias futuras
 -------------------------------------------------------------------------------------------------------
